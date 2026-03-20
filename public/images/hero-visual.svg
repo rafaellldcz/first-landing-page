@@ -1,0 +1,42 @@
+﻿<svg width="1280" height="1024" viewBox="0 0 1280 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="94" y1="76" x2="1120" y2="934" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101D33"/>
+      <stop offset="1" stop-color="#0A1324"/>
+    </linearGradient>
+    <linearGradient id="line" x1="220" y1="340" x2="1060" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#437CFF"/>
+      <stop offset="1" stop-color="#23CFB4"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1280" height="1024" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="1024" rx="48" fill="url(#bg)"/>
+  <g filter="url(#blur)" opacity="0.55">
+    <circle cx="245" cy="140" r="210" fill="#3C7DFF"/>
+    <circle cx="1060" cy="100" r="140" fill="#22D3B6"/>
+  </g>
+  <rect x="96" y="100" width="1088" height="824" rx="32" fill="#0B1527" stroke="rgba(255,255,255,0.18)"/>
+  <rect x="156" y="160" width="290" height="146" rx="18" fill="#15243C"/>
+  <rect x="470" y="160" width="290" height="146" rx="18" fill="#15243C"/>
+  <rect x="784" y="160" width="340" height="146" rx="18" fill="#15243C"/>
+  <text x="192" y="214" fill="#AFC1E4" font-family="Verdana" font-size="22">Leads no mes</text>
+  <text x="192" y="266" fill="#F6FAFF" font-family="Verdana" font-size="44" font-weight="700">2,148</text>
+  <text x="504" y="214" fill="#AFC1E4" font-family="Verdana" font-size="22">Taxa de conversao</text>
+  <text x="504" y="266" fill="#F6FAFF" font-family="Verdana" font-size="44" font-weight="700">9.2%</text>
+  <text x="816" y="214" fill="#AFC1E4" font-family="Verdana" font-size="22">CPL medio</text>
+  <text x="816" y="266" fill="#F6FAFF" font-family="Verdana" font-size="44" font-weight="700">R$ 18,40</text>
+  <rect x="156" y="344" width="968" height="500" rx="26" fill="#111F36"/>
+  <path d="M220 710C298 638 348 582 432 564C528 544 596 610 682 570C770 530 804 462 890 442C952 428 1004 450 1060 494" stroke="url(#line)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="432" cy="564" r="13" fill="#437CFF"/>
+  <circle cx="682" cy="570" r="13" fill="#3E9BFF"/>
+  <circle cx="890" cy="442" r="13" fill="#31C7D7"/>
+  <circle cx="1060" cy="494" r="13" fill="#23CFB4"/>
+  <rect x="230" y="734" width="210" height="12" rx="6" fill="rgba(186,201,230,0.55)"/>
+  <rect x="230" y="760" width="420" height="12" rx="6" fill="rgba(186,201,230,0.35)"/>
+  <rect x="770" y="734" width="176" height="74" rx="14" fill="#1A2C49"/>
+  <text x="808" y="764" fill="#AFC1E4" font-family="Verdana" font-size="16">MQL Growth</text>
+  <text x="808" y="790" fill="#F6FAFF" font-family="Verdana" font-size="24" font-weight="700">+42%</text>
+</svg>
+

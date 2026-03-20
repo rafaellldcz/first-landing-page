@@ -1,0 +1,23 @@
+﻿<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cover" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1220"/>
+      <stop offset="0.55" stop-color="#13233E"/>
+      <stop offset="1" stop-color="#1A2E4B"/>
+    </linearGradient>
+    <linearGradient id="line" x1="112" y1="483" x2="1060" y2="483" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A84FF"/>
+      <stop offset="1" stop-color="#22D3B6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#cover)"/>
+  <circle cx="130" cy="96" r="132" fill="#3C7DFF" opacity="0.2"/>
+  <circle cx="1090" cy="40" r="116" fill="#22D3B6" opacity="0.16"/>
+  <text x="112" y="196" fill="#8FB4FF" font-family="Verdana" font-size="24" letter-spacing="3">ASTRASCALE STUDIO</text>
+  <text x="112" y="280" fill="#F4F8FF" font-family="Verdana" font-size="66" font-weight="700">Landing Page Premium</text>
+  <text x="112" y="342" fill="#C9D7F2" font-family="Verdana" font-size="34">Template em Next.js para alta conversao</text>
+  <path d="M112 503C188 436 265 412 342 428C420 444 482 506 565 472C628 447 666 382 741 368C834 350 922 394 1060 485" stroke="url(#line)" stroke-width="9" stroke-linecap="round"/>
+  <rect x="112" y="532" width="320" height="14" rx="7" fill="#9FB5E2" opacity="0.7"/>
+  <rect x="112" y="556" width="510" height="14" rx="7" fill="#9FB5E2" opacity="0.38"/>
+</svg>
+

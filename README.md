@@ -1,36 +1,199 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+﻿# Landing Page Template Premium (Next.js)
 
-## Getting Started
+Template profissional de landing page para alta conversao, pronto para adaptar e vender para diferentes nichos.
 
-First, run the development server:
+## Visao geral
+
+Este projeto foi construido para servir como base comercial reutilizavel para:
+- agencia
+- produto digital
+- SaaS
+- consultoria
+- servico local
+- infoproduto
+- e-commerce de produto unico
+- evento
+- time/esports/marca pessoal
+
+O foco do template e:
+- UX orientada a conversao
+- SEO tecnico basico pronto
+- performance real (Next.js + App Router + next/image)
+- arquitetura limpa e escalavel
+- customizacao rapida sem retrabalho
+
+## Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- shadcn/ui
+- Motion for React (`motion/react`)
+- Lucide React
+- React Hook Form
+- Zod
+- next/image
+- next/font
+- ESLint
+
+Auxiliares:
+- clsx
+- tailwind-merge
+- class-variance-authority
+- tw-animate-css
+
+## Instalacao
+
+```bash
+npm install
+```
+
+## Comandos
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estrutura de pastas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+landing-page-template/
+  public/
+    images/
+      hero-visual.svg
+      og-cover.svg
+  src/
+    app/
+      favicon.ico
+      globals.css
+      layout.tsx
+      page.tsx
+    components/
+      landing/
+        benefits-section.tsx
+        faq-section.tsx
+        final-cta-section.tsx
+        footer.tsx
+        header.tsx
+        hero-section.tsx
+        how-it-works-section.tsx
+        icon-map.tsx
+        landing-page.tsx
+        lead-form-section.tsx
+        offer-section.tsx
+        reveal.tsx
+        section-heading.tsx
+        section-shell.tsx
+        social-proof-section.tsx
+        testimonials-section.tsx
+      ui/
+        accordion.tsx
+        alert.tsx
+        badge.tsx
+        button.tsx
+        card.tsx
+        input.tsx
+        label.tsx
+        separator.tsx
+        sheet.tsx
+        textarea.tsx
+    data/
+      site-config.ts
+      theme.ts
+    hooks/
+      use-lead-form.ts
+    lib/
+      integrations/
+        lead-capture.ts
+      icon-names.ts
+      lead-schema.ts
+      utils.ts
+    styles/
+      landing.css
+  next.config.ts
+  package.json
+  tsconfig.json
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Como adaptar o conteudo
 
-## Learn More
+### 1) Conteudo global
+Edite `src/data/site-config.ts`.
 
-To learn more about Next.js, take a look at the following resources:
+Esse arquivo controla:
+- nome da marca
+- textos da hero
+- beneficios
+- processo
+- oferta
+- depoimentos
+- FAQ
+- CTA final
+- links do footer
+- contatos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2) Formulario e mensagens
+- Schema e validacao: `src/lib/lead-schema.ts`
+- Estado/envio do form: `src/hooks/use-lead-form.ts`
+- Integracao (mock pronta para trocar): `src/lib/integrations/lead-capture.ts`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para integrar com backend real, substitua o conteudo de `submitLead`.
 
-## Deploy on Vercel
+### 3) Identidade visual (cores e tema)
+- Tokens de tema: `src/data/theme.ts`
+- Variaveis CSS globais: `src/app/globals.css`
+- Utilitarios visuais extras: `src/styles/landing.css`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 4) Imagens
+- Hero: `public/images/hero-visual.svg`
+- OG image: `public/images/og-cover.svg`
+- Caminhos das imagens: `src/data/site-config.ts`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## SEO tecnico implementado
+
+- Metadata via App Router em `src/app/layout.tsx`
+- `title`, `description`, `metadataBase`, `canonical`
+- Open Graph e Twitter Card
+- `lang="pt-BR"`
+- estrutura semantica (`header`, `main`, `section`, `footer`)
+
+## Publicar na Vercel
+
+1. Suba o repositorio no GitHub/GitLab/Bitbucket.
+2. Entre em https://vercel.com e importe o repositorio.
+3. Framework detectado automaticamente: `Next.js`.
+4. Build command: `next build` (padrao).
+5. Output: `.next` (padrao).
+6. Clique em Deploy.
+
+Opcional para producao:
+- configurar dominio customizado
+- configurar variaveis de ambiente se conectar CRM/API
+
+## Sugestoes de adaptacao por nicho
+
+- SaaS: destaque trial, prova tecnica, comparativo com concorrente.
+- Consultoria: destaque metodo, autoridade, estudos de caso.
+- Infoproduto: destaque transformacao, bonus, urgencia de oferta.
+- E-commerce de produto unico: destaque beneficio principal, garantia, depoimentos.
+- Servico local: destaque regiao atendida, WhatsApp, prova local.
+- Evento: destaque agenda, speakers, lotes, CTA de inscricao.
+
+## Comandos usados na criacao deste projeto
+
+```bash
+npx create-next-app@latest landing-page-template --typescript --eslint --app --src-dir --import-alias "@/*" --tailwind --use-npm --yes
+npm install motion lucide-react react-hook-form zod @hookform/resolvers
+npx shadcn@latest init -d
+npx shadcn@latest add accordion badge card input textarea label sheet separator alert
+npm run lint
+npm run build
+```
+
+## Observacao
+
+A pasta raiz original continha espaco no nome (`Landing Pages`), entao o projeto foi criado dentro de `landing-page-template` para atender a restricao de nome de pacote npm.

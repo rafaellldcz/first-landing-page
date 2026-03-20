@@ -1,0 +1,24 @@
+﻿@layer utilities {
+  .section-grid {
+    background-image: linear-gradient(
+        to right,
+        color-mix(in oklch, var(--border) 56%, transparent) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        color-mix(in oklch, var(--border) 56%, transparent) 1px,
+        transparent 1px
+      );
+    background-size: 38px 38px;
+    background-position: center;
+  }
+
+  .text-gradient {
+    background: linear-gradient(120deg, #8eb1ff 0%, #56e7d1 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
